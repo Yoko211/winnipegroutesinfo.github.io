@@ -1,0 +1,59 @@
+<!-------w------------
+
+    Assignment 4
+    Name: Juan Alejandro Londono
+    Date: Feb 12 2023
+    Description: AJAX Using Open Data
+
+--------------------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Open Data Assignment</title>    
+</head>
+<body>    
+    <div class="container">
+        <div>
+            <div>
+                <h2>WINNIPEG ROUTES</h2>
+                <div class="search">
+                    <h5>Search Winnipeg Routes</h5>
+                    <!--Create search Form and Button-->
+                    <input type="text" name="bar-search" class="bar-search" placeholder="Type Route Number" id="inputRouteNumber" required>
+                    <input type="submit" name="search" value="Search" onclick="busquedaRouteNumber()">
+                    <p><small> Try searching for 11, or 18, or 24.</small></p>
+                </div>
+                <div >
+                    <!--Create table structure-->
+                    <table class="table" id="route-list">
+                        <thead>
+                            <tr>
+                                <th scope="col">Route Number</th>
+                                <th scope="col">Route Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Scheduled Time</th>
+                                <th scope="col">Stop Number</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <span id="errorMessage"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>   
+</body>
+</html>
